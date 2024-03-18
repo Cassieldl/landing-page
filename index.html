@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br
+">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Landing Page</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-video" id="nav_logo"> Cine</i>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#movies">Lançamentos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#posters">Em Breve</a>
+                </li>
+            </ul>
+
+             <button class="btn-default">
+                <i class="fa-solid fa-user"></i>
+                Login
+            </button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Catálogo</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Ingressos
+            </button>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div id="cta">
+                <h1 class="title">
+                    Uma nova história para <span>você</span>
+                </h1>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, iure ratione? Explicabo quis recusandae, dolor in maxime ea
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="#" class="btn-default">
+                        Em cartaz
+                    </a>
+                    <a href="tel:+55555555555" id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        (xx) xxxxx-xxxx
+                    </a>
+                </div>
+                
+                <div class="social-media-buttons">
+                    <a href="#">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <div id="banner">
+                <img src="src/imgs/img-svg/svg1.svg" alt="Banner">
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 class="section-subtitle">Filmes em cartaz</h3>
+
+            <div id="movies">
+                <div class="movie">
+                    <div class="movie-ag">
+                        <i class="fa-solid fa-film"></i>
+                    </div>
+
+                    <img src="src/imgs/movies/movie1.jpg" class="movie-image" alt="Interstelar poster">
+
+                    <h3 class="movie-title">
+                        Interstelar
+                    </h3>
+
+                    <span class="movie-description">
+                        As reservas naturais da Terra estão chegando ao fim e um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper é chamado para liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos.
+                    </span>
+
+                    <div class="movie-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <span>8,7/10</span>
+                    </div>
+
+                    <div class="movie-media">
+                        <button class="btn-default">
+                            <a href="#"><i class="fa-solid fa-ticket"> Assistir</i></a>
+                        </button>
+                        <button class="btn-default">
+                            <a href="https://www.youtube.com/watch?v=hHBsKHVLAYc" target="_blank"><i class="fa-solid fa-film"> Trailer</i></a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="movie">
+                    <div class="movie-ag">
+                        <i class="fa-solid fa-film"></i>
+                    </div>
+
+                    <img src="src/imgs/movies/movie2.jpg" class="movie-image" alt="Spirited Away poster">
+
+                    <h3 class="movie-title">
+                        A Viagem de Chihiro
+                    </h3>
+
+                    <span class="movie-description">
+                        Chihiro e seus pais estão se mudando para uma cidade diferente. A caminho da nova casa, o pai decide pegar um atalho. Eles se deparam com uma mesa repleta de comida, embora ninguém esteja por perto. Chihiro sente o perigo, mas seus pais começam a comer. Quando anoitece, eles se transformam em porcos. Agora, apenas Chihiro pode salvá-los.
+                    </span>
+
+                    <div class="movie-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <span>8,6/10</span>
+                    </div>
+
+                    <div class="movie-media">
+                        <button class="btn-default">
+                            <a href="#"><i class="fa-solid fa-ticket"> Assistir</i></a>
+                        </button>
+                        <button class="btn-default">
+                            <a href="https://www.youtube.com/watch?v=ByXuk9QqQkk" target="_blank"><i class="fa-solid fa-film"> Trailer</i></a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="movie">
+                    <div class="movie-ag">
+                        <i class="fa-solid fa-film"></i>
+                    </div>
+
+                    <img src="src/imgs/movies/movie3.jpg" class="movie-image" alt="In Time poster">
+
+                    <h3 class="movie-title">
+                        O Preço do Amanhã
+                    </h3>
+
+                    <span class="movie-description">
+                        Acusado de assassinato, um homem deve descobrir como derrubar um sistema onde tempo é dinheiro e que permite que os ricos vivam para sempre, enquanto os pobres devem implorar por cada minuto de suas vidas.
+                    </span>
+
+                    <div class="movie-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <span>6,7/10</span>
+                    </div>
+
+                    <div class="movie-media">
+                        <button class="btn-default">
+                            <a href="#"><i class="fa-solid fa-ticket"> Assistir</i></a>
+                        </button>
+                        <button class="btn-default">
+                            <a href="https://www.youtube.com/watch?v=YRSBiTF3wNw" target="_blank"><i class="fa-solid fa-film"> Trailer</i></a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="movie">
+                    <div class="movie-ag">
+                        <i class="fa-solid fa-film"></i>
+                    </div>
+
+                    <img src="src/imgs/movies/movie4.jpg" class="movie-image" alt="Batman Dark Knight poster">
+
+                    <h3 class="movie-title">
+                        Batman: O Cavaleiro das Trevas
+                    </h3>
+
+                    <span class="movie-description">
+                        Batman tem conseguido manter a ordem em Gotham com a ajuda de Jim Gordon e Harvey Dent. No entanto, um jovem e anárquico criminoso, conhecido apenas como Coringa, pretende testar o Cavaleiro das Trevas e mergulhar a cidade em um verdadeiro cao
+                    </span>
+
+                    <div class="movie-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <span>9,0/10</span>
+                    </div>
+
+                    <div class="movie-media">
+                        <button class="btn-default">
+                            <a href="#"><i class="fa-solid fa-ticket"> Assistir</i></a>
+                        </button>
+                        <button class="btn-default">
+                            <a href="https://www.youtube.com/watch?v=LDG9bisJEaI" target="_blank"><i class="fa-solid fa-film"> Trailer</i></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="releases">
+            <div class="release-section">
+                <h3 class="section-subtitle">
+                    Fique por dentro dos próximos filmes que estão por vir e não perca os lançamentos mais aguardados 
+                </h3>
+                <img src="src/imgs/img-svg/svg2.svg" id="release_img" alt="">
+            </div>
+             
+            <div id="releases_content">
+                <div id="posters">
+                    <div class="img-box">
+                        <img src="src/imgs/movies-releases/movie5.jpg" alt="">
+                    </div>
+                        
+                    <div class="poster-content">
+                        <h3>
+                            Trem Bala
+                        </h3>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-film"><a href="https://www.youtube.com/watch?v=GyrbDk-4QM8" target="_blank"> TRAILER</a></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="posters">
+                    <div class="img-box">
+                        <img src="src/imgs/movies-releases/movie6.jpg" alt="">
+                    </div>
+                        
+                    <div class="poster-content">
+                        <h3>
+                            Tudo em Todo o Lugar ao Mesmo Tempo 
+                        </h3>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-film"><a href="https://www.youtube.com/watch?v=kULcXm9V7aY" target="_blank"> TRAILER</a></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="posters">
+                    <div class="img-box">
+                        <img src="src/imgs/movies-releases/movie7.jpg" alt="">
+                    </div>
+                        
+                    <div class="poster-content">
+                        <h3>
+                            Jogos Vorazes
+                        </h3>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-film"><a href="https://www.youtube.com/watch?v=mfmrPu43DF8" target="_blank"> TRAILER</a></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="posters">
+                    <div class="img-box">
+                        <img src="src/imgs/movies-releases/movie8.jpg" alt="">
+                    </div>
+                        
+                    <div class="poster-content">
+                        <h3>
+                            A Voz do Silêncio
+                        </h3>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-film"><a href="https://www.youtube.com/watch?v=nfK6UgLra7g" target="_blank"> TRAILER</a></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="posters">
+                    <div class="img-box">
+                        <img src="src/imgs/movies-releases/movie9.jpg" alt="">
+                    </div>
+                        
+                    <div class="poster-content">
+                        <h3>
+                            Gato de Botas 2
+                        </h3>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-film"><a href="https://www.youtube.com/watch?v=qtHcEfpYIow" target="_blank"> TRAILER</a></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="src/imgs/img-svg/svg3.svg" alt="">
+
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2024 Cassiel de Lima
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>

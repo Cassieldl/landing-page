@@ -1,0 +1,124 @@
+#releases {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+
+#release_img {
+    width: 100%;
+}
+
+#releases .release-section {
+    display: flex;
+    width: 100%;
+    padding: 50px;
+}
+
+#releases .section-subtitle {
+    font-size: 3rem;
+    color: var(--color-primary-1);
+}
+
+#releases_content {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#posters {
+    justify-content: center;
+    height: 500px;
+    margin: 50px;
+    position: relative;
+    transition: 0.5s;
+}
+
+#posters img {
+    height: 500px;
+    width: 350px;
+    border-radius: 15px;
+}
+
+#posters:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+#posters:hover img {
+    filter: blur(2px);
+}
+
+#posters .poster-content {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 110px;
+    width: 350px;
+    padding: 6px;
+    bottom: 1px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    position: absolute;
+    background: rgb(27, 27, 27, 0.7);
+}
+
+#posters .poster-content h3 {
+    margin: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#posters .poster-content button {
+    visibility: hidden;
+}
+
+
+#posters .poster-content .btn-default a {
+    text-decoration: none;
+}
+
+#posters .poster-content .btn-default a:visited {
+    color: var(--color-primary-7);
+}
+
+#posters:hover .poster-content {
+    height: 160px;
+    bottom: 0px;
+    background: rgb(27, 27, 27, 0.4);
+}
+
+#posters:hover .poster-content button {
+    visibility: visible;
+    position: relative;
+    right: -25%;
+    width: 50%;
+}
+
+@media screen and (max-width: 1170px) {
+    #releases {
+        display: flex;
+        justify-content: center;
+    }
+
+    #releases .section-subtitle {
+        text-align: center;
+    }
+
+    #releases #release_img {
+        display: none;
+    }
+
+    #release_content {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 750px) {
+}
